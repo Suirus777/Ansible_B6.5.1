@@ -18,7 +18,7 @@ Skillfactory: Module 6 - Ansible!!!!</br>
    
    Ответ:</br>
    Был создан playbook: postfix.yml</br>
-   Были --tags "init postfix" и --tags drop postfix для установки и удаления postfix в зависимости от использования тэга в команде.</br>
+   Были добавлены тэги: --tags "init postfix" и --tags drop postfix для установки и удаления postfix в зависимости от использования тэга в команде.</br>
 
    Команда для установки postfix: ansible-playbook postfix.yml --tags "init postfix"</br>
    Postfix был установлен: root@devops1:/home/odmin#  ps aux | grep postfix</br>
