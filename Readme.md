@@ -1,4 +1,4 @@
-Skillfactory: Module 6 - Ansible!!!!</br>
+Skillfactory: Module 6 - Ansible!</br>
 
 Задание B6.5.1</br>
 
