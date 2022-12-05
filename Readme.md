@@ -11,6 +11,10 @@ Skillfactory: Module 6 - Ansible!</br>
    Ключ User1.pub был зашифрован ansible-vault: <b>ansible-vault encrypt --ask-password ~/.ssh/user1.pub </b></br>
    Для создания пользователя на удалённом сервере и расшифровки ssh ключа user1.pub использовалась команда: 
    </br> <b>ansible-playbook --ask-vault-pass useradd.yml</b></br>
+   Результат пользователь был создан, удалённый доступ работает: <b> ssh -i ~/.ssh/user1 user1@192.168.200.103 <br>
+   user1@devops1:~$ pwd <br>
+   /home/user1 <br>
+   user1@devops1:~$ </b> <br>
 
 2. Создайте плейбук, который устанавливает, либо удаляет почтовый сервер postfix в зависимости от тега.</br>
    При запуске ansible-playbook <путь_к_плейбуку> --tags "init postfix" должен устанавливаться и запускаться с конфигурацией по умолчанию. </br>
