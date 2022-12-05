@@ -2,4 +2,4 @@
 localhosts ansible_host=127.0.0.1
 
 [servers]
-devops ansible_host=192.168.200.103 ansible_user=odmin ansible_pass=dhfls%6ald ansible_ssh_private_key_file=/root/.ssh/odmin
+devops ansible_host=192.168.200.103 ansible_user=odmin ansible_pass=dh2fls%6ald ansible_ssh_private_key_file=/root/.ssh/odmin
