@@ -1,0 +1,22 @@
+---
+- hosts: devops
+  tasks:
+  - name: Update the apt package index in Debian server
+    become: yes
+    apt:
+      update_cache: yes
+      force_apt_get: yes
+
+  - name: Install mail postfix-server on Debian server
+    become: yes
+    package:
+      name: postfix
+      state: latest
+    tags: init postfix
+
+  - name: Remove mail postfix-server from Debian server
+    become: yes
+    package:
+      name: postfix
+      state: absent
+    tags: drop postfix
